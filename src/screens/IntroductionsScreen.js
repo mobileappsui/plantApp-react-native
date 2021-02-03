@@ -6,6 +6,8 @@ import IdentifyPlantsScreen from './IdentifyPlantsScreen';
 import PlantsSpeciesScreen from './PlantsSpeciesScreen';
 import PlantArticleScreen from './PlantArticleScreen';
 
+import theme from '../theme';
+
 const slides = [
   {
     key: '1',
@@ -86,7 +88,7 @@ const IntroductionScreen = () => {
   return (
     <AppIntroSlider
       ref={slider}
-      activeDotStyle={{backgroundColor: '#2DDA93'}}
+      activeDotStyle={{backgroundColor: theme.PRIMARY}}
       renderItem={_renderItem}
       data={slides}
       onDone={_onDone}
@@ -100,14 +102,14 @@ const IntroductionScreen = () => {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#2DDA93',
+    backgroundColor: theme.PRIMARY,
     padding: 15,
     borderRadius: 3,
     marginBottom: 85,
     marginTop: 30,
   },
   buttonText: {
-    color: '#fff',
+    color: theme.WHITE,
     textAlign: 'center',
     fontSize: 15,
     fontFamily: 'SF Pro Text Bold',

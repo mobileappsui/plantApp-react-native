@@ -1,6 +1,8 @@
 import React from 'react';
 import {Text, View, StyleSheet, Image} from 'react-native';
 
+import theme from '../theme';
+
 const PlantsSpeciesScreen = () => (
   <View style={styles.container}>
     <View style={styles.imageContainer}>
@@ -20,7 +22,7 @@ const PlantsSpeciesScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: theme.WHITE,
   },
   imageContainer: {
     justifyContent: 'center',
@@ -32,13 +34,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 55,
   },
   title: {
-    color: '#36455A',
+    color: theme.BLACK,
     fontSize: 20,
     textAlign: 'center',
     fontFamily: 'SF Pro Text Bold',
   },
   description: {
-    color: '#6A6F7D',
+    color: theme.LIGHT_GRAY,
     fontSize: 13,
     textAlign: 'center',
     marginTop: 25,
