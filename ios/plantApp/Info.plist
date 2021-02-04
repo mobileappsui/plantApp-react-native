@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>FontAwesome.ttf</string>
+		<string>Feather.ttf</string>
 		<string>FontsFree-Net-SFProText-Bold.ttf</string>
 		<string>FontsFree-Net-SFProText-Regular.ttf</string>
 		<string>FontsFree-Net-SFProText-Medium.ttf</string>
